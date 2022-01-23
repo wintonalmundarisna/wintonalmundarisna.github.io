@@ -1,0 +1,1146 @@
+@font-face {
+  font-family: Oswald;
+  src: url("../FONT/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: kellyslab-regular-webfont;
+  src: url("../FONT/kellyslab-regular-webfont.woff") format("woff");
+}
+
+.navbar {
+  background-color: #363636;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 0px 50px;
+  transition: 0.5s;
+}
+
+.navbar.sticky {
+  background: local;
+  transition: 0.5s;
+  position: fixed;
+}
+
+.logoNav.stickDua {
+  visibility: hidden;
+  transition: 1ms;
+}
+
+span.stickTiga {
+  visibility: hidden;
+}
+
+.navbar .container-fluid .navbar-brand {
+  font-family: kellyslab-regular-webfont;
+  color: #ddd;
+  font-size: 23px;
+  text-shadow: 0px 1px 1px #d35c0d;
+  padding-top: 16px;
+}
+
+.navbar .container-fluid .navbar-brand:hover {
+  color: #fc6c0e;
+}
+
+.navbar-brand img {
+  width: 80px;
+  padding-bottom: 1px;
+  margin-top: -8px;
+}
+
+.collapse ul {
+  width: 100%;
+  justify-content: space-evenly;
+  font-family: Oswald;
+}
+
+ul .menu {
+  color: #fc6c0e;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+ul .menu:hover {
+  color: #ddd;
+  text-decoration: none;
+  background-color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+ul .garis {
+  color: #fc6c0e;
+}
+
+ul .garis:hover {
+  color: #fc6c0e;
+}
+
+/* Content One */
+.content-one {
+  background-color: #262626;
+  padding: 150px 30px 10px 30px;
+  letter-spacing: 2px;
+  font-family: Oswald;
+}
+
+.content-one h5 {
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+.carousel-inner .carousel-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 460px;
+}
+
+.carousel-inner .car-satu {
+  background-image: url(../IMG/hero.jpg);
+}
+.carousel-inner .car-dua {
+  background-image: url(../IMG/quality.jpg);
+}
+.carousel-inner .car-tiga {
+  background-image: url(../IMG/budget.jpg);
+}
+/* Content One */
+
+/* Content Two */
+.konten-dua {
+  grid-area: konten2;
+  display: grid;
+  grid-template-areas: "satu dua tiga";
+  padding: 100px 20px 50px 45px;
+  background-color: #262626;
+  font-family: Oswald;
+  letter-spacing: 1px;
+}
+
+.konten-dua button {
+  color: rgb(26, 26, 26);
+  font-weight: 900;
+  background-color: #ddd;
+  padding: 5px 10px;
+  width: 100%;
+  font-size: 12px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.konten-dua button:hover {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+/* ! Isi pertama */
+.konten-dua .satu {
+  grid-area: satu;
+  margin-right: 30px;
+}
+
+.satu .gambar1 {
+  background-image: url(../IMG/infrastructure.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0px;
+  border: 5px solid #ddd;
+  box-shadow: 4px 4px 2px black;
+}
+
+.satu .tulisan1 {
+  color: #ddd;
+}
+
+.tulisan1 .h1 {
+  font-size: 30px;
+  color: #fc6c0e;
+}
+
+.tulisan1 .p1 {
+  text-align: justify;
+}
+/* ! Akhir isi pertama */
+
+/* ! Isi kedua */
+.konten-dua .dua {
+  grid-area: dua;
+  margin-right: 30px;
+}
+
+.dua .gambar2 {
+  background-image: url(../IMG/IT.jpg);
+  background-size: cover;
+  box-shadow: 4px 4px 2px black;
+  background-position: center;
+  padding: 80px 0px;
+  border: 5px solid #ddd;
+}
+
+.dua .tulisan2 {
+  color: #ddd;
+}
+
+.tulisan2 .h2 {
+  font-size: 30px;
+  color: #fc6c0e;
+}
+
+.tulisan2 .p2 {
+  text-align: justify;
+}
+/* ! Akhir isi kedua */
+
+/* ! Isi ketiga */
+.konten-dua .tiga {
+  margin-right: 30px;
+  grid-area: tiga;
+}
+
+.tiga .gambar3 {
+  background-image: url(../IMG/branches.jpg);
+  background-size: cover;
+  box-shadow: 4px 4px 2px black;
+  background-position: center;
+  padding: 80px 0px;
+  border: 5px solid #ddd;
+}
+
+.tiga .tulisan3 {
+  color: #ddd;
+}
+
+.tulisan3 .h3 {
+  font-size: 30px;
+  color: #fc6c0e;
+}
+
+.tulisan3 .p3 {
+  text-align: justify;
+}
+/* ! Akhir isi ketiga */
+/* Content Two */
+
+/* About*/
+.about {
+  grid-area: konten3;
+  display: grid;
+  grid-template-areas:
+    "judul-1 judul-1"
+    "judul-2 judul-2"
+    "isi isi";
+  background-color: #363636;
+  padding: 90px 200px 90px 200px;
+  font-family: Oswald;
+  letter-spacing: 1.5px;
+}
+
+.about .judul2 {
+  grid-area: judul-1;
+  justify-self: center;
+}
+
+.judul2 h1 {
+  color: #fc6c0e;
+}
+
+.judul-kedua {
+  grid-area: judul-2;
+  justify-self: center;
+}
+
+.judul-kedua .kedua {
+  font-size: 20px;
+  color: #ddd;
+}
+
+.about .isi {
+  grid-area: isi;
+  display: grid;
+  grid-template-areas: "kiri kanan";
+  text-align: center;
+  color: rgb(184, 180, 180);
+  gap: 15px;
+}
+
+.isi .kiri {
+  grid-area: kiri;
+}
+
+.isi .kanan {
+  grid-area: kanan;
+}
+/* Akhir about */
+
+/* Client */
+.project {
+  display: grid;
+  grid-template-areas:
+    "klien klien klien"
+    "arsitek IT juru-masak";
+  background-color: #262626;
+  padding: 95px 100px 60px 100px;
+  gap: 10px;
+  justify-content: space-evenly;
+  font-family: Oswald;
+  letter-spacing: 1px;
+}
+
+.project .more {
+  grid-area: klien;
+  text-align: center;
+  color: #fc6c0e;
+}
+
+.more p {
+  color: #ddd;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+/* Arsitek */
+.arsitek {
+  grid-area: arsitek;
+  display: grid;
+  grid-template-areas:
+    "gambar-arsitek"
+    "ket-arsitek";
+  width: 290px;
+  height: 500px;
+  background-color: black;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 15px 15px 10px black;
+}
+
+.klien-pertama img {
+  grid-area: gambar-arsitek;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.arsitek .ket-arsitek {
+  grid-area: ket-arsitek;
+  color: #ddd;
+}
+
+.ket-arsitek .button-arsitek {
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.button-arsitek button {
+  color: #ddd;
+  background-color: black;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+/* Arsitek */
+
+/* IT */
+.pelajar {
+  grid-area: IT;
+  display: grid;
+  grid-template-areas:
+    "gambar-it"
+    "ket-it";
+  width: 280px;
+  height: 500px;
+  background-color: black;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 15px 15px 10px black;
+}
+
+.klien-kedua img {
+  grid-area: gambar-it;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.pelajar .ket-pelajar {
+  grid-area: ket-it;
+  color: #ddd;
+}
+
+.ket-pelajar .button-it {
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.button-it button {
+  color: #ddd;
+  background-color: black;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+/* IT */
+
+/* Chef */
+.juru-masak {
+  grid-area: juru-masak;
+  display: grid;
+  grid-template-areas:
+    "gambar-masak"
+    "ket-masak";
+  background-color: black;
+  width: 280px;
+  height: 500px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 15px 15px 10px black;
+}
+
+.klien-ketiga img {
+  grid-area: gambar-masak;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.juru-masak .ket-masak {
+  grid-area: ket-masak;
+  color: #ddd;
+}
+
+.ket-masak .button-chef {
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.ket-masak button {
+  color: #ddd;
+  background-color: black;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+/* Chef */
+/* Akhir konten 4 */
+
+/* Konten 5 */
+.message {
+  display: grid;
+  background-color: #363636;
+  justify-content: center;
+  padding: 120px 40px 40px 40px;
+  font-family: Oswald;
+  letter-spacing: 1px;
+}
+
+.content-message {
+  color: #ddd;
+  border-radius: 25px;
+  border: inset 5px black;
+  background: linear-gradient(to right, black, #522406);
+  box-shadow: 10px 10px 10px black;
+  box-sizing: border-box;
+  width: 700px;
+}
+
+.message .judul-message {
+  color: black;
+  background-color: #ddd;
+  width: 100%;
+  padding: 25px 0px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.content-message .logo_message {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.content-message img {
+  width: 175px;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 50%;
+}
+
+.content-message li {
+  list-style: none;
+}
+
+.content-message .inputan {
+  background-color: #ddd;
+  width: 100%;
+}
+
+.content-message .send {
+  background-color: #ddd;
+  padding: 8px 20px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.content-message button {
+  padding: 8px 50px;
+  background-color: rgb(0, 0, 0);
+  color: #ddd;
+  border-radius: 20px;
+}
+
+.content-message button:hover {
+  background-color: #522406;
+}
+/* Konten 5 */
+
+/* Footer */
+.footer {
+  background-color: #262626;
+  display: grid;
+  grid-template-areas:
+    "location contact rate"
+    "location contact rate";
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: space-evenly;
+  font-family: Oswald;
+  letter-spacing: 1px;
+}
+
+.location {
+  color: #ddd;
+  text-align: center;
+}
+
+.location img {
+  grid-area: location;
+  width: 150px;
+  padding: 10px 20px;
+}
+
+.location img:hover {
+  width: 160px;
+}
+
+.contact {
+  gap: 100px;
+  color: #ddd;
+  text-align: center;
+  align-self: center;
+}
+
+.contact span {
+  color: #fc6c0e;
+}
+
+.contact .img_location {
+  justify-content: space-between;
+  grid-area: contact;
+  width: 30px;
+  border-radius: 50%;
+  margin: 0px 10px 10px 0px;
+}
+
+.contact img:hover {
+  width: 40px;
+}
+
+.rate {
+  grid-area: rate;
+  color: #ddd;
+  align-self: center;
+  padding-top: 33px;
+  text-align: center;
+}
+
+.rate button {
+  padding: 5px 10px;
+  background-color: #642c07;
+  color: #ddd;
+  box-shadow: 5px 5px 5px black;
+}
+
+.rate button:hover {
+  font-size: 20px;
+}
+/* Footer */
+
+/* Tablet */
+@media screen and (max-width: 1140px) {
+  .navbar .container-fluid .navbar-brand:hover {
+    color: #fc6c0e;
+  }
+
+  .navbar-brand img {
+    width: 65px;
+    padding-bottom: 1px;
+    margin-top: -9px;
+  }
+
+  .collapse ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  ul .menu {
+    color: #fc6c0e;
+    text-decoration: none;
+    font-size: 11px;
+  }
+
+  .content-one {
+    background-color: #262626;
+    padding: 135px 10px 5px 10px;
+  }
+
+  .carousel-inner .carousel-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    background-position: center;
+  }
+
+  .konten-dua {
+    display: grid;
+    grid-template-areas: "satu" "dua" "tiga";
+    padding: 125px 10px 90px 40px;
+    background-color: #262626;
+    gap: 50px;
+  }
+
+  .about {
+    display: grid;
+    grid-template-areas:
+      "judul-1 judul-1"
+      "judul-2 judul-2"
+      "isi" "isi";
+    background-color: #363636;
+    padding: 125px 25px;
+    font-size: 11px;
+  }
+
+  .project {
+    display: grid;
+    grid-template-areas:
+      "klien"
+      "arsitek IT juru-masak";
+    background-color: #262626;
+    padding: 140px 20px;
+    gap: 10px;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+  }
+
+  /* Our Client */
+  .project h1 {
+    font-size: 20px;
+  }
+
+  .more p {
+    color: #ddd;
+    font-size: 15px;
+  }
+
+  .arsitek {
+    display: grid;
+    grid-template-areas:
+      "gambar-arsitek"
+      "ket-arsitek";
+    width: 190px;
+    height: fit-content;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 5px 5px 5px black;
+  }
+
+  .arsitek:hover {
+    width: 193px;
+    height: fit-content;
+  }
+
+  .arsitek .ket-arsitek {
+    grid-area: ket-arsitek;
+    color: #ddd;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+    padding-top: 5px;
+  }
+
+  .pelajar {
+    grid-area: IT;
+    display: grid;
+    grid-template-areas:
+      "gambar-it"
+      "ket-it";
+    width: 188px;
+    height: fit-content;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 5px 5px 5px black;
+  }
+
+  .pelajar:hover {
+    width: 193px;
+    height: fit-content;
+  }
+
+  .pelajar .ket-pelajar {
+    grid-area: ket-it;
+    color: #ddd;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+    padding-top: 5px;
+  }
+
+  .juru-masak {
+    grid-area: juru-masak;
+    display: grid;
+    grid-template-areas:
+      "gambar-masak"
+      "ket-masak";
+    width: 188px;
+    height: fit-content;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 5px 5px 5px black;
+  }
+
+  .juru-masak:hover {
+    width: 193px;
+    height: fit-content;
+  }
+
+  .juru-masak .ket-masak {
+    grid-area: ket-masak;
+    color: #ddd;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+    padding-top: 5px;
+  }
+
+  .button-arsitek button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  .button-it button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  .button-chef button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  /* Our Client */
+  /* Message */
+  .message {
+    display: grid;
+    background-color: #363636;
+    justify-content: center;
+    padding: 145px 40px;
+  }
+
+  .content-message {
+    color: #ddd;
+    border-radius: 25px;
+    border: inset 5px black;
+    background: linear-gradient(to right, black, #522406);
+    box-shadow: 10px 10px 10px black;
+    box-sizing: border-box;
+    width: 600px;
+  }
+
+  .message .judul-message {
+    color: black;
+    background-color: #ddd;
+    width: 100%;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 20px 20px 0px 0px;
+  }
+  /* Message */
+  /* Footer */
+  .footer {
+    background-color: #262626;
+    display: grid;
+    grid-template-areas:
+      "location contact rate"
+      "location contact rate";
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-evenly;
+  }
+
+  .location {
+    color: #ddd;
+    text-align: center;
+  }
+
+  .location p {
+    font-size: 12px;
+  }
+
+  .location img {
+    grid-area: location;
+    width: 120px;
+    padding: 10px 20px;
+  }
+
+  .location img:hover {
+    width: 130px;
+  }
+
+  .contact {
+    gap: 50px;
+    color: #ddd;
+    text-align: center;
+    align-self: center;
+  }
+
+  .contact p {
+    font-size: 12px;
+  }
+
+  .contact span {
+    color: #fc6c0e;
+  }
+
+  .contact .img_location {
+    justify-content: space-between;
+    grid-area: contact;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0px 10px 10px 0px;
+  }
+
+  .contact img:hover {
+    width: 30px;
+  }
+
+  .footer {
+    background-color: #262626;
+    display: grid;
+    grid-template-areas:
+      "location contact rate"
+      "location contact rate";
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-evenly;
+  }
+
+  .rate {
+    grid-area: rate;
+    color: #ddd;
+    align-self: center;
+    padding-top: 28px;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .rate button {
+    padding: 5px 10px;
+    background-color: #642c07;
+    color: #ddd;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 5px;
+  }
+
+  .rate button:hover {
+    font-size: 13px;
+  }
+  /* Footer */
+}
+/* Tablet */
+
+/* Mobile */
+@media screen and (max-width: 720px) {
+  .navbar {
+    background-color: #363636;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 0px 0px;
+  }
+
+  .navbar img {
+    width: 45px;
+    /* margin-top: -10px; */
+  }
+
+  .navbar button {
+    margin-right: 5px;
+    padding: 1px 3px;
+  }
+
+  .navbar .container-fluid .navbar-brand {
+    color: #ddd;
+    font-size: 15px;
+    margin-top: -8px;
+  }
+
+  .collapse ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .content-one {
+    background-color: #262626;
+    padding: 118px 12px 0px 10px;
+  }
+
+  .carousel-inner .carousel-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 280px;
+    background-position: bottom;
+  }
+
+  .carousel-inner .car-satu {
+    background-image: url(../IMG/hero.jpg);
+  }
+
+  .konten-dua {
+    display: grid;
+    grid-template-areas: "satu" "dua" "tiga";
+    padding: 110px 10px 110px 40px;
+    background-color: #262626;
+    gap: 60px;
+  }
+
+  .about {
+    display: grid;
+    grid-template-areas:
+      "judul-1 judul-1"
+      "judul-2 judul-2"
+      "isi" "isi";
+    background-color: #363636;
+    padding: 105px 25px;
+    font-size: 11px;
+  }
+
+  .about .isi {
+    display: grid;
+    grid-template-areas: "kiri kanan";
+    text-align: center;
+    color: rgb(184, 180, 180);
+  }
+
+  /* Client */
+  .project {
+    display: grid;
+    grid-template-areas:
+      "klien"
+      "arsitek IT juru-masak";
+    background-color: #262626;
+    padding: 110px 20px;
+    gap: 5px;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+  }
+
+  .project h1 {
+    font-size: 20px;
+  }
+
+  .more p {
+    color: #ddd;
+    font-size: 15px;
+  }
+
+  .arsitek {
+    display: grid;
+    grid-template-areas:
+      "gambar-arsitek"
+      "ket-arsitek";
+    width: 140px;
+    height: fit-content;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 5px 5px 5px black;
+  }
+
+  .arsitek:hover {
+    width: 160px;
+    height: fit-content;
+  }
+
+  .arsitek .ket-arsitek {
+    grid-area: ket-arsitek;
+    color: #ddd;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+    padding-top: 5px;
+  }
+
+  .pelajar {
+    grid-area: IT;
+    display: grid;
+    grid-template-areas:
+      "gambar-it"
+      "ket-it";
+    width: 140px;
+    height: fit-content;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 5px 5px 5px black;
+  }
+
+  .pelajar:hover {
+    width: 160px;
+    height: fit-content;
+  }
+
+  .pelajar .ket-pelajar {
+    grid-area: ket-it;
+    color: #ddd;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+    padding-top: 5px;
+  }
+
+  .juru-masak {
+    grid-area: juru-masak;
+    display: grid;
+    grid-template-areas:
+      "gambar-masak"
+      "ket-masak";
+    width: 140px;
+    height: fit-content;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 5px 5px 5px black;
+  }
+
+  .juru-masak:hover {
+    width: 155px;
+    height: fit-content;
+  }
+
+  .juru-masak .ket-masak {
+    grid-area: ket-masak;
+    color: #ddd;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+    padding-top: 5px;
+  }
+
+  .button-arsitek button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  .button-it button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  .button-chef button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  /* Client */
+  /* Message */
+  .message {
+    display: grid;
+    background-color: #363636;
+    justify-content: center;
+    padding: 118px 40px;
+    font-size: 10px;
+  }
+
+  .message .judul-message {
+    font-size: 15px;
+  }
+
+  .content-message {
+    width: 300px;
+    height: fit-content;
+  }
+
+  .content-message .inputan {
+    background-color: #ddd;
+    width: 100%;
+  }
+
+  .content-message img {
+    width: 100px;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 50%;
+  }
+  /* Message */
+  /* Footer */
+  .footer {
+    background-color: #262626;
+    display: grid;
+    grid-template-areas:
+      "location contact rate"
+      "location contact rate";
+    grid-template-columns: 1fr 1.5fr 1fr;
+    justify-content: space-evenly;
+  }
+
+  .location {
+    font-size: 11px;
+  }
+
+  .location img {
+    grid-area: location;
+    width: 100px;
+    padding: 10px 20px;
+  }
+
+  .location img:hover {
+    width: 110px;
+  }
+
+  .contact {
+    color: #ddd;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .contact p {
+    font-size: 10px;
+  }
+
+  .contact .img_location {
+    gap: 50px;
+    margin: 0px 10px 5px 0px;
+  }
+
+  .contact span {
+    color: #fc6c0e;
+  }
+
+  .contact .img_location {
+    justify-content: space-between;
+    grid-area: contact;
+    width: 20px;
+    border-radius: 50%;
+  }
+
+  .contact img:hover {
+    width: 25px;
+  }
+
+  .rate {
+    grid-area: rate;
+    color: #ddd;
+    text-align: center;
+    align-self: center;
+    font-size: 10px;
+  }
+
+  .rate button {
+    background-color: #642c07;
+    color: #ddd;
+    box-shadow: 5px 5px 5px black;
+  }
+
+  .rate button:hover {
+    font-size: 13px;
+  }
+  /* Footer */
+}
+/* Mobile */

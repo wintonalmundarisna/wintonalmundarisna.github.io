@@ -864,11 +864,10 @@ ul .garis:hover {
 
   .navbar img {
     width: 45px;
-    /* margin-top: -10px; */
   }
 
   .navbar button {
-    margin-right: 18px;
+    /* margin-right: 18px; */
     padding: 1px 3px;
   }
 
@@ -883,7 +882,7 @@ ul .garis:hover {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    margin-left: -11px;
+    margin-left: -2px;
   }
 
   .content-one {
@@ -936,8 +935,9 @@ ul .garis:hover {
       "klien"
       "arsitek IT juru-masak";
     background-color: #262626;
-    padding: 90px 10px;
-    gap: 5px;
+    /* padding: 90px 10px; */
+    padding: 110px 5px;
+    gap: 2px;
     justify-content: space-evenly;
     box-sizing: border-box;
   }
@@ -958,7 +958,8 @@ ul .garis:hover {
     grid-template-areas:
       "gambar-arsitek"
       "ket-arsitek";
-    width: 123px;
+    width: 110px;
+    font-size: 10px;
     box-shadow: 5px 5px 5px black;
   }
 
@@ -986,7 +987,7 @@ ul .garis:hover {
     grid-template-areas:
       "gambar-it"
       "ket-it";
-    width: 120px;
+    width: 108px;
     box-shadow: 5px 5px 5px black;
   }
 
@@ -1014,7 +1015,7 @@ ul .garis:hover {
     grid-template-areas:
       "gambar-masak"
       "ket-masak";
-    width: 120px;
+    width: 108px;
     box-shadow: 5px 5px 5px black;
   }
 
